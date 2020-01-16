@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+
+#book {
+    display: inline-flex;
+    padding-top: 10px;
+}
+
+#socialmedia {
+    padding-left: 50px;
+    text-align: right;
+}
+
+#tag {
+    padding-left: 20px;
+}
+
+.checked {
+    color: orange;
+}
+
+
+/* Three column layout */
+
+.side {
+    width: 15%;
+}
+
+.middle {
+    float: left;
+    width: 60%;
+}
+
+
+/* Place text to the right */
+
+.right {
+    text-align: right;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+
+@media (max-width: 400px) {
+    .side,
+    .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+
+#head1 {
+    height: 50px;
+    padding-left: 20px;
+    background-color: #343535;
+    color: whitesmoke;
+}
+
+#head2 {
+    height: 170px;
+    font-family: spirax;
+}
+
+#head3 {
+    height: 120px;
+    background-color: #EAF5F8;
+}
+
+#social {
+    padding-top: 0px;
+}
+
+#head4 {
+    height: 100px;
+}
+
+#building {
+    border-style: ridge;
+}
+
+#impressium {
+    padding: 20px;
+    padding-top: 30px;
+    font-style: gothic;
+    font-size: 20px;
+    font-family: spirax;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+#navbar {
+    padding-left: 80px;
+}
+
+#ks {
+    text-align: left;
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+
+#profile,
+#login,
+#cart {
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+#borderfooter {
+    border-style: inset;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #D3D3D3;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: 0.8s;
+}
+
+.note {
+    float: left;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: cornsilk;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    overflow: hidden;
+    height: 65px;
+}
+
+.header a {
+    color: inherit;
+}
+
+.header a:hover {
+    font-weight: bold;
+}
+
+.header-logo {
+    float: left;
+}
+
+.header-nav {
+    float: right;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.see-more {
+    float: left;
+    background: indianred;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+em {
+    font-size: small;
+}
+
+#mainlogo {
+    padding-left: 150px;
+}
+
+#navbar {
+    color: black;
+}
+
+#footer1 {
+    background-color: #083845;
+}
+
+#nav1 {
+    position: relative;
+    padding-left: 100px;
+    color: black;
+    height: 100px;
+}
